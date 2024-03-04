@@ -1,0 +1,116 @@
+body{
+    background-image: url("fondo.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.container-navbar{
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    background-color:rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.container-navbar span{
+    font-size: 30px;
+    font-weight: 550;
+    margin: 0 20px;
+    color: #f87171;
+}
+
+.container-navbar button{
+    font-size: 18px;
+    margin: 0 20px;
+    padding: 12px 40px;
+    border-radius: 15px;
+    border: none;
+    color: #fef2f2;
+    background-color: #f87171;
+}
+
+.container-navbar button:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #fca5a5;
+}
+
+.container{
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 55px;
+}
+
+.book-card{
+    height: 200px;
+    width: 250px;
+    background-color: #fca5a5;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.book-card h2{
+    text-align: center;
+}
+
+.book-card p{
+    margin: 4px 10px;
+}
+
+.book-card button{
+    width: 100px;
+    padding: 4px 10px;
+    margin: 0 auto;
+    background-color: #f87171;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.book-card button:hover{
+    cursor: pointer;
+}
+
+.book-card .btn-read {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff; /* Color de fondo inicial */
+    border: 1px solid #000;
+}
+
+.book-card.read .btn-read {
+    background-color: #00ff00; /* Color de fondo cuando el libro es leído */
+}
